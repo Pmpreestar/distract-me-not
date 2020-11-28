@@ -6,8 +6,8 @@ App::App(int argc, char** argv, int width, int height, const char* title): GlutA
 
     // Pushing different kinds of Shape in the collection
     shapes.push_back(new TexRect("loadingscreen2.png", -1, 1, 2, 2));
-    shapes.push_back(new Rect());
-    shapes.push_back(new Circle());
+  //  shapes.push_back(new Rect()); creates rectangle on the screen
+  //  shapes.push_back(new Circle()); creates circle on the screen
 } 
 
 void App::draw() const {
