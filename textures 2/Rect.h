@@ -12,10 +12,11 @@ protected:
 	float r;
 	float g;
 	float b;
+	float a;
 
 public:
 	Rect();
-	Rect(float, float, float, float, float r=1, float g=0, float b=0);
+	Rect(float, float, float, float, float r=1, float g=0, float b=0, float a =0);
 
 	void draw(float z=0) const;
 

@@ -1,17 +1,19 @@
 #include "Rect.h"
 #include "GlutApp.h"
-
+//changed the color and size here
 Rect::Rect(){
-	x = 0;
+	x = -0.55;
 	y = 0;
-	w = 0.5;
-	h = 0.5;
-	r = 1;
+	w = 1.1;
+	h = 0.25;
+	r = 0;
 	g = 0;
-	b = 0;
+	b = 1;
+	a = 0.15;
+
 }
 
-Rect::Rect(float x, float y, float w, float h, float r, float g, float b){
+Rect::Rect(float x, float y, float w, float h, float r, float g, float b, float a){
 	this->x = x;
 	this->y = y;
 	this->w = w;
@@ -19,10 +21,13 @@ Rect::Rect(float x, float y, float w, float h, float r, float g, float b){
 	this->r = r;
 	this->g = g;
 	this->b = b;
+	this->a =a;
+
 }
 
 void Rect::draw(float z) const {
-	glColor3f(r, g, b);
+	//glColor3f(r, g, b);
+	glColor4f(r,g,b,a);
 
 	glBegin(GL_POLYGON);
 
