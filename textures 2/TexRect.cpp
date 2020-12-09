@@ -70,12 +70,12 @@ TexRect::TexRect(const char* filename, float x=0, float y=0, float w=0.5, float 
 }
 
 
-void TexRect::draw(float z) const {
+void TexRect::draw(float z) const { 
     glBindTexture( GL_TEXTURE_2D, texture_id );
     glEnable(GL_TEXTURE_2D);
     
     glBegin(GL_QUADS);
-    glColor4f(1, 1, 1, 1);
+    glColor4f(1, 1, 1, 1); //mapping the rectangluar coordinates with the texture coordinates
     glTexCoord2f(0, 0);
     glVertex3f(x, y - h, z);
     

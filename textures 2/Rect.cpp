@@ -1,15 +1,16 @@
 #include "Rect.h"
 #include "GlutApp.h"
 //changed the color and size here
-Rect::Rect(){
+
+Rect::Rect(){ 
 	x = -0.55;
-	y = 0;
+	y = 0.02;
 	w = 1.1;
 	h = 0.25;
 	r = 0;
 	g = 0;
-	b = 1;
-	a = 0.15;
+	b = 0;
+	a = 0.15; // a is for transparency
 
 }
 
